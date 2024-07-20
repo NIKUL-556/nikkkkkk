@@ -287,7 +287,7 @@ span.auto-typed {
 }
 
 .name-scrolling h1 {
-  font-size: 8vw;
+  font-size: 6vw;
   margin-right: 2vw;
   display: inline-block;
   font-family: "Lemon", serif;
@@ -837,7 +837,6 @@ span.auto-typed {
 @media screen and (min-width: 568px) {
 
   .footer-container,
-  .about-container,
   .portfolio-content {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -877,6 +876,10 @@ span.auto-typed {
 @media screen and (min-width: 768px) {
   #cursor{
     display: block;
+  }
+
+  .about-container {
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .data-scroll-section {
