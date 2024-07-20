@@ -12,11 +12,8 @@
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
+    <!--==================== SHERY JS CSS ====================-->
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-
-    <link href="
-https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
-" rel="stylesheet">
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./css/styles.css">
@@ -25,24 +22,21 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
 
 </head>
 
-<body class="scroll" >
+<body class="scroll">
 
     <!--==================== CURSOR ANIMATION ====================-->
     <div id="cursor"></div>
+
+    <!--==================== LOADING PAGE ANIMATION ====================-->
     <div class="cover">
         <h1>hello</h1>
     </div>
 
-
     <!--==================== MAIN ====================-->
     <main class="main">
 
-
-
-
         <!--==================== HEADER ====================-->
         <header>
-
 
             <a href="#" class="logo">Portfolio</a>
 
@@ -57,8 +51,8 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                 </div>
                 <div id="darkmode" class="bx-moon"><i class="ri-moon-line change-theme" id="theme-button"></i></div>
             </div>
-        </header>
 
+        </header>
 
         <!--==================== HOME ====================-->
         <section class="home " id="home">
@@ -93,15 +87,13 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
             </div>
         </section>
 
-
         <!--==================== NAME SCROLLING ====================-->
-        <div id="name-div">
-            <h1>Nikul  ? </h1>
-            <h1>Nikul  ? </h1>
-            <h1>Nikul  ? </h1>
-            <h1>Nikul  ? </h1>
+        <div class="name-scrolling">
+            <h1>Nikul Darji ? </h1>
+            <h1>Nikul Darji ? </h1>
+            <h1>Nikul Darji ? </h1>
+            <h1>Nikul Darji ? </h1>
         </div>
-
 
         <!--==================== ABOUT ====================-->
         <section class="about" id="about">
@@ -119,28 +111,26 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                         HTML5, CSS3, JavaScript, React and Node.js 💻 I'm currently studying Full-Stack development at
                         Digital
                         College.</p>
-                    <div class="about__info">
+                    <div class="about-info">
                         <div>
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Years <br> technology </span>
+                            <span class="about-info-title">02+</span>
+                            <span class="about-info-name">Years <br> technology </span>
                         </div>
                         <div>
-                            <span class="about__info-title">10+</span>
-                            <span class="about__info-name">Repositories <br> on Github </span>
+                            <span class="about-info-title">10+</span>
+                            <span class="about-info-name">Repositories <br> on Github </span>
                         </div>
                         <div>
-                            <span class="about__info-title">05+</span>
-                            <span class="about__info-name">Completed <br> projects </span>
+                            <span class="about-info-title">05+</span>
+                            <span class="about-info-name">Completed <br> projects </span>
                         </div>
                     </div>
-                    <div class="about__buttons">
+                    <div class="about-buttons">
                         <a href="./assets/pdf/Alexa-Cv.pdf" class="btn" target="_blank" download>Download Cv <i
                                 class="ri-download-2-line"></i></a>
                     </div>
                 </div>
-
             </div>
-
 
         </section>
 
@@ -151,12 +141,10 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                 <span>My technical Skills</span>
             </div>
 
-            <div class="skills-container">
-
-                <!--================= skills content    ==============-->
+            <!--================= skills content    ==============-->
+             <div class="skills-container">
 
                 <!---------------------- skills 1  ---------------------->
-
                 <div class="skills-content  skills-open  ">
                     <div class="FEQ">
                         <div class="skills-header">
@@ -214,7 +202,6 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                 </div>
 
                 <!------------------------ skills 2 ---------------------->
-
                 <div class="skills-content skills-close">
                     <div class="FEQ">
                         <div class="skills-header">
@@ -271,11 +258,13 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
+
             <div class="portfolio-heading">
                 <h2>Portfolio</h2>
                 <span>Most recent work</span>
@@ -347,73 +336,78 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
 
         <!--==================== QUALIFICATION ====================-->
         <section class="qualification section" id="qualification">
+
             <div class="Qualifications-heading">
                 <h2>Qualifications </h2>
                 <span>My personal journey</span>
             </div>
 
-            <div class="qualification__container container-colifi ">
-                <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
-                        <i class="ri-graduation-cap-line qualification__icon"></i>
+            <div class="qualification-container container-colifi ">
+
+                <div class="qualification-tabs">
+
+                    <div class="qualification-button button--flex qualification-active" data-target="#education">
+                        <i class="ri-graduation-cap-line qualification-icon"></i>
                         Education
                     </div>
-                    <div class="qualification__button button--flex" data-target="#work">
-                        <i class="ri-briefcase-4-line qualification__icon"></i>
+
+                    <div class="qualification-button button--flex" data-target="#work">
+                        <i class="ri-briefcase-4-line qualification-icon"></i>
                         Work
                     </div>
                 </div>
-                <div class="qualification__sections  ">
+
+                <div class="qualification-sections ">
                     <!--===============================QUALIFICATION CONTENT 1 ===========================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
+                    <div class="qualification-content qualification-active" data-content id="education">
                         <!--===============================QUALIFICATION 1 ===========================-->
-                        <div class="qualification__data">
+                        <div class="qualification-data">
                             <div>
-                                <h3 class="qualification__title">Full-Stack Development</h3>
-                                <span class="qualification__subtitle">Digital College</span>
-                                <div class="qualification__calendar">
+                                <h3 class="qualification-title">Full-Stack Development</h3>
+                                <span class="qualification-subtitle">Digital College</span>
+                                <div class="qualification-calendar">
                                     <i class="ri-calendar-2-line"></i>
                                     January, 2023 - present
                                 </div>
                             </div>
                             <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
                             </div>
                         </div>
                         <!--===============================QUALIFICATION 2 ===========================-->
-                        <div class="qualification__data">
+                        <div class="qualification-data">
                             <div></div>
                             <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
                             </div>
                             <div>
-                                <h3 class="qualification__title">Internet Systems</h3>
-                                <span class="qualification__subtitle">UniAmerica Desc. </span>
-                                <div class="qualification__calendar">
+                                <h3 class="qualification-title">Internet Systems</h3>
+                                <span class="qualification-subtitle">UniAmerica Desc. </span>
+                                <div class="qualification-calendar">
                                     <i class="ri-calendar-2-line"></i>
                                     April, 2022 - present
                                 </div>
                             </div>
                         </div>
                         <!--===============================QUALIFICATION 3 ===========================-->
-                        <div class="qualification__data">
+                        <div class="qualification-data">
                             <div>
-                                <h3 class="qualification__title">Journalism</h3>
-                                <span class="qualification__subtitle">Federal university of Ceará</span>
-                                <div class="qualification__calendar">
+                                <h3 class="qualification-title">Journalism</h3>
+                                <span class="qualification-subtitle">Federal university of Ceará</span>
+                                <div class="qualification-calendar">
                                     <i class="ri-calendar-2-line"></i>
                                     August, 2016 - May, 2021
                                 </div>
                             </div>
                             <div>
-                                <span class="qualification__rounder"></span>
+                                <span class="qualification-rounder"></span>
                             </div>
                         </div>
                     </div>
                     <!--===============================QUALIFICATION CONTENT 2 ===========================-->
-                    <div class="qualification__content" data-content id="work">
+                    <div class="qualification-content" data-content id="work">
                         <!--===============================QUALIFICATION 1 ===========================-->
                         <p style="text-align: center;">Coming soon :)</p>
                     </div>
@@ -421,10 +415,11 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
             </div>
         </section>
 
-
         <!--==================== FOOTER ====================-->
         <footer class="footer" id="footer">
+
             <div class="data-scroll-section">
+
                 <h1>you can get in touch <br>
                     with me via <p class="mail">
                         <a target="_blank" href="mailto: nik90945@gmail.com">mail</a>
@@ -435,96 +430,67 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
                         <a target="_blank" href="https://www.linkedin.com/in/nikul-darji56/">linkedIn</a>
                     </p>.
                 </h1>
+
             </div>
 
-            <div class="footer__bg">
-                <div class="footer__container containerfooter grid2">
+            <div class="footer-bg">
+
+                <div class="footer-container containerfooter grid2">
+
                     <div>
-                        <h1 class="footer__title">Nikul_</h1>
-                        <span class="footer__subtitle">Full-Stack Developer</span>
+                        <h1 class="footer-title">Nikul_</h1>
+                        <span class="footer-subtitle">Full-Stack Developer</span>
                     </div>
-                    <ul class="footer__links">
 
-                        <div class="email">
-                            <i class="ri-mail-fill"> nik90945@gmail.com</i>
-                        </div>
-
+                    <ul class="footer-links">
                         <li>
-                            <a href="#skills" class="footer__link">Skills</a>
+                            <a href="#skills" class="footer-link">Skills</a>
                         </li>
                         <li>
-                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                            <a href="#portfolio" class="footer-link">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#contact" class="footer__link">Contact</a>
+                            <a href="#contact" class="footer-link">Contact</a>
                         </li>
                     </ul>
-                    <div class="footer__socials">
-                        <a href="https://github.com/NIKUL-556" target="_blank" class="footer__social"
-                            class="footer__social">
-                            <i class="ri-github-fill"></i>
-                        </a>
 
-                        <a href="https://www.linkedin.com/in/nikul-darji56/" target="_blank" class="footer__social"
-                            class="footer__social">
-                            <i class="ri-linkedin-fill"></i>
-                        </a>
-                        <a href="https://www.instagram.com/rathod_nikul556/?igsh=MTIxMDRoOG1hdTdnbA%3D%3D"
-                            target="_blank" class="footer__social" class="footer__social">
-                            <i class="ri-instagram-fill"></i>
-                        </a>
+                    <div class="footer--socials">
+
+                        <a href="https://github.com/NIKUL-556" target="_blank" class="footer-social">
+                            <i class="ri-github-fill"></i> </a>
+
+                        <a href="https://www.linkedin.com/in/nikul-darji56/" target="_blank" class="footer-social">
+                            <i class="ri-linkedin-fill"></i> </a>
+
+                        <a href="https://www.instagram.com/rathod_nikul556/?igsh=MTIxMDRoOG1hdTdnbA%3D%3D" target="_blank" class="footer-social">
+                            <i class="ri-instagram-fill"></i> </a>
 
                     </div>
                 </div>
 
-                <p class="footer__copy">&#169; Nikul Darji. All rights reserved.</p>
+                <p class="footer-copy">&#169; Nikul Darji. All rights reserved.</p>
 
-                <div class="footer_bg">
-                    <div class="footer_bg_one"></div>
-                    <div class="footer_bg_two"></div>
+                <div class="footer-animation-bg">
+                    <div class="footer-bg-one"></div>
+                    <div class="footer-bg-two"></div>
                 </div>
-            </div>
-        </footer>
 
+            </div>
+
+        </footer>
 
     </main>
 
 
-
-    <!--==================== SCROLL TOP ====================-->
-    <!-- <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-double-line  scroll__icon"></i>
-        </a> -->
-
     <!--==================== SWIPER JS  ====================-->
+
     <script src="./js/swiper-bundle.min.js"></script>
 
     <!--==================== TYPE EFFECT CD JS ====================-->
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-
-    <!--==================== GSAP ====================-->
-    <!--  Gsap is needed for Basic Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <!-- Scroll Trigger is needed for Scroll Effects -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
-
-    <!-- Three.js is needed for 3d Effects -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-
-    <!-- ControlKit is needed for Debug Panel -->
-    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-
-    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <!--==================== GSAP AND SCROLLTRIGGER CDN ====================-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -534,8 +500,12 @@ https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!--==================== SHERY JS ====================-->
+
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
 
     <!--==================== MAIN JS ====================-->
+
     <script src="./js/main.js"></script>
 
 </body>

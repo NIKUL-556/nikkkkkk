@@ -1,5 +1,4 @@
-
-/*==================== AUTO TYPING ====================*/
+/*==================== AUTO TYPING =======================*/
 
 var typed = new Typed('.auto-typed', {
   strings: ["Front-End Developer", "Back-End Developer", "Full Stack Developer"],
@@ -7,7 +6,6 @@ var typed = new Typed('.auto-typed', {
   backSpeed: 50,
   loop: true
 });
-
 
 /*==================== skills content  ====================*/
 
@@ -25,7 +23,6 @@ skillsHeader.forEach(item => {
   })
 
 });
-
 
 /*==================== PORTFOLIO SWIPER ====================*/
 
@@ -45,8 +42,7 @@ let swiper = new Swiper('.portfolio-container', {
 
 });
 
-
-/*==================== QUALIFICATION TABS ====================*/
+/*==================== QUALIFICATION TABS =================*/
 
 const tabs = document.querySelectorAll('[data-target]'),
   tabContents = document.querySelectorAll('[data-content]')
@@ -56,19 +52,19 @@ tabs.forEach(tab => {
     const target = document.querySelector(tab.dataset.target);
 
     tabContents.forEach(tabContent => {
-      tabContent.classList.remove('qualification__active');
+      tabContent.classList.remove('qualification-active');
     });
 
-    target.classList.add('qualification__active');
+    target.classList.add('qualification-active');
 
     tabs.forEach(tab => {
-      tab.classList.remove('qualification__active');
+      tab.classList.remove('qualification-active');
     })
-    tab.classList.add('qualification__active');
+    tab.classList.add('qualification-active');
   })
 })
 
-/*==================== NAVBAR ====================*/
+/*========================== NAVBAR =======================*/
 
 let menu = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
@@ -80,7 +76,7 @@ window.onscroll = () => {
   navbar.classList.remove('active')
 }
 
-/*==================== DARK LIGHT THEME ====================*/
+/*==================== DARK LIGHT THEME ===================*/
 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
@@ -111,9 +107,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-
-/*==================== GSAP ANIMATION ====================*/
-
+/*======================= GSAP ANIMATION ========================*/
 
 /*========= CURSOR ANIMATION ========*/
 
@@ -145,12 +139,12 @@ logo.addEventListener("mouseleave",()=>{
 
 /*========= MAGNET ANIMATION ========*/
 
-Shery.makeMagnet(".logo,li,.bx-moon", {
+Shery.makeMagnet(".logo,li", {
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   duration: 1,
 });
 
-/*========= SCROLL HIDE ========*/
+/*============ SCROLL HIDE ==========*/
 
 let body = document.querySelector("body");
 let mainpage = document.querySelector(".main");
@@ -199,7 +193,7 @@ tl.to(".cover",{
     opacity:0,
     duration:3,
     delay:2,
-    y:-600,
+    y:-900,
 })
   
 tl.from(".logo",{
@@ -234,24 +228,24 @@ tl.from(".home-img",{
   duration:1
 },"anim")
 }
- page1()
+page1()
 
+/*==== NAME SCROLLING ======*/
 
+function namesrolling(){
+  var tll = gsap.timeline()
 
-// scrolling a namediv
-
-var tll = gsap.timeline()
-
-tll.to("#name-div h1", {
-  transform: "translateX(calc(-100% - 2vw - 4px))",
-  scrollTrigger: {
-    trigger: "#name-div h1",
-    scroller: "body",
-    start:"top 90%",
-    scrub: 0.7
-  }
-})
-
+  tll.to(".name-scrolling h1", {
+    transform: "translateX(calc(-100% - 2vw - 4px))",
+    scrollTrigger: {
+      trigger: ".name-scrolling h1",
+      scroller: "body",
+      start:"top 90%",
+      scrub: 0.7,
+    }
+  })
+}
+namesrolling()
 
 /*========= PAGE-2 ========*/
 
@@ -287,26 +281,26 @@ function page2() {
     duration:0.8,
   },"anim")
   
-  tl2.from(".about__buttons",{
+  tl2.from(".about-buttons",{
     x:100,
     opacity:0,
     duration:0.8,
   },"anim")
   
-  tl2.from(".about__info",{
+  tl2.from(".about-info",{
     x:100,
     opacity:0,
     duration:0.8,
   },"anim")
   
-  tl2.from(".about__info-title",{
+  tl2.from(".about-info-title",{
     y:10,
     opacity:0,
     duration:0.1,
   })
 
 }
- page2()
+page2()
 
 /*========= PAGE-3 ========*/
 
@@ -347,7 +341,7 @@ function page3() {
     duration:0.5,
   })
 }
- page3()
+page3()
 
 /*========= PAGE-4 ========*/
 
@@ -370,18 +364,18 @@ function page4() {
   })
   
   tl4.from(".portfolio-img",{
-    x:-60,
+    x:-50,
     opacity:0,
     duration:0.8,
   },"animi")
 
   tl4.from(".portfolio-data ",{
-    x:60,
+    x:50,
     opacity:0,
     duration:0.8,
   },"animi")
 }
- page4()
+page4()
 
 /*========= PAGE-5 ========*/
 
@@ -404,88 +398,11 @@ function page5() {
   })    
   
        
-  tl5.from(".qualification__subtitle,.qualification__calendar",{
+  tl5.from(".qualification-subtitle,.qualification-calendar",{
     y:-50,
     opacity:0,
     duration:0.8,
   })    
    
 }
- page5()
-
-
-
-// Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
-
-
-
-
-
-
-
-
- 
-
-
- 
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   // Scroll Reveal
-// const sr = ScrollReveal ({
-//     origin: 'top',
-//     distance: '40px',
-//     duration: 2000,
-//     reset: true
-// });
-
-
-// sr.reveal( ` .home-text, .home-img,
-//             .about-img, .about-text,
-//             .box, .s-box,
-//             .btn, .connect-text,
-//             .contact-box `, {
-//     interval: 200
-// })
-
+page5()
