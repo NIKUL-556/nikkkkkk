@@ -26,8 +26,9 @@ skillsHeader.forEach(item => {
 
 /*==================== PORTFOLIO SWIPER ====================*/
 
-let swiper = new Swiper('.portfolio-container', {
+let swiper = new Swiper('.portfolio-container ', {
   cssMode: true,
+  loop:true,
 
   navigation: {
     nextEl: '.swiper-button-next',
