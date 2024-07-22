@@ -28,7 +28,6 @@ skillsHeader.forEach(item => {
 
 let swiper = new Swiper('.portfolio-container ', {
   cssMode: true,
-  loop:true,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -232,20 +231,20 @@ page1()
 
 /*==== NAME SCROLLING ======*/
 
-function namesrolling(){
-  var tll = gsap.timeline()
+// function namesrolling(){
+//   var tll = gsap.timeline()
 
-  tll.to(".name-scrolling h1", {
-    transform: "translateX(calc(-100% - 2vw - 4px))",
-    scrollTrigger: {
-      trigger: ".name-scrolling h1",
-      scroller: "body",
-      start:"top 90%",
-      scrub: 0.7,
-    }
-  })
-}
-namesrolling()
+//   tll.to(".name-scrolling h1", {
+//     transform: "translateX(calc(-100% - 2vw - 4px))",
+//     scrollTrigger: {
+//       trigger: ".name-scrolling h1",
+//       scroller: "body",
+//       start:"top 90%",
+//       scrub: 0.7,
+//     }
+//   })
+// }
+// namesrolling()
 
 /*========= PAGE-2 ========*/
 
