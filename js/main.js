@@ -36,6 +36,8 @@ let swiperPortfolio = new Swiper(".portfolio-container ", {
       el: ".swiper-pagination",
       clickable: true,
   },
+  observer: true,  
+  observeParents: true,
 });
 
 
