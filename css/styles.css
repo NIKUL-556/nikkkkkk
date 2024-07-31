@@ -738,6 +738,17 @@ span.auto-typed {
   display: none;
 }
 
+/*==================== SCROLLBAR ====================*/
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color-light);
+  border-radius: 50px;
+}
+
+
 
 /*==================== MEDIA QUERIES ====================*/
 
